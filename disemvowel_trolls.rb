@@ -42,6 +42,6 @@ end
 
 def order(words)
     # sorted = words.split(" ")
-    # sorted.sort_by { |word| word.scan[/\d/]}.join(" ")
-    words.split.sort_by { |word| word[/\d/].first.to_i }.join(" ")
+    # sorted.sort_by { |word| word.scan[/\d/]first.to_i}.join(" ")
+    words.split.sort_by { |word| word[/\d/] }.join(" ")
 end

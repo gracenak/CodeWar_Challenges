@@ -10,3 +10,8 @@ def solution(num)
         # can take in a range or array of numbers and optionally receive a block
         # passes each element and accumulates each sequentially
 end
+
+def prime?(n)
+    (2...n).none? { |x| n % x == 0 }
+end
+
