@@ -18,6 +18,20 @@ def count_vowels(str)
             end
         end
     end
-    puts i
+    return i
     # print out the number of vowels
+    # puts i to print but will print and then return nil
+end
+
+def count_consonants(str)
+    consonants = 0
+    i = 0
+    while i < str.length do
+        if str[i] != "a" && str[i] != "e" && str[i] != "i" && 
+            str[i]!= "o" && str[i] != "u" && str[i] != " "
+            consonants += 1
+        end
+        i += 1
+    end
+    return consonants
 end
