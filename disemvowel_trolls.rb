@@ -45,3 +45,10 @@ def order(words)
     # sorted.sort_by { |word| word.scan[/\d/]first.to_i}.join(" ")
     words.split.sort_by { |word| word[/\d/] }.join(" ")
 end
+
+def reverse_each_word(sentence)
+    array = sentence.split(" ")
+    array.collect { |x| x.reverse! }
+    return array.join(" ")
+end
+
