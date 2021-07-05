@@ -57,3 +57,13 @@ def oxford_comma(array)
     end
 end
 
+def roll_call_students(names)
+    new_list = []
+    names.each_with_index do |name, index|
+        new_list << "#{index}. #{name}"
+    end
+    puts new_list.join(" ")
+end
+
+# ** how to begin index at 1 instead of zero
+
