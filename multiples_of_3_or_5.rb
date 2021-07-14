@@ -12,6 +12,46 @@ def solution(num)
 end
 
 def prime?(n)
+    start = Time.now
     (2...n).none? { |x| n % x == 0 }
+    Time.now - start
 end
 
+def prime? (n)
+    if n <= 1
+        false
+    elsif n == 2
+        true
+    else 
+        (2..n/2).none? { |x| n % x == 0}
+    end
+end
+
+def prime?(n)
+    start = Time.now
+    return false if n <= 1 
+      if (2...n).any?{|x| n % x == 0}
+        false
+      else
+        true
+      end
+      Time.now - start
+  end
+
+
+def prime_num?(n)
+    start = Time.now
+    if n <= 1
+        return false
+    elsif
+        (2...n).each do |i|
+            if n % i == 0
+                return false
+            end
+            
+        end
+        Time.now - start
+    end
+    true
+    Time.now - start
+end
